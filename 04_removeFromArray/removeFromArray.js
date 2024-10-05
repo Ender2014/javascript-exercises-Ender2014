@@ -1,6 +1,13 @@
 const removeFromArray = function(array, ...args) {
-    array.splice(arr.indexOf(em),1)
-    return arr
+    const newArray = []
+
+    array.forEach((item) => {
+        if(!args.includes(item)){
+            newArray.push(item)
+        }
+    });
+ 
+    return newArray
 };
 
 // Do not edit below this line
